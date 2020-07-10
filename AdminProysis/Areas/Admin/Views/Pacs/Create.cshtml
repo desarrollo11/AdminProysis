@@ -1,0 +1,104 @@
+﻿@model AdminProysis.Models.Pac
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<br />
+<br />
+<h3 class="text-center"> Crear un nuevo PAC</h3>
+<form method="post" asp-action="Create">
+    <div class="row px-2 mx-2 border">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="col-10 offset-1 mt-4">
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="Nombre"></label>
+                </div>
+                <div class="col-8">
+                    <input asp-for="Nombre" class="form-control" />
+                    <span asp-validation-for="Nombre" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="Contacto"></label>
+                </div>
+                <div class="col-8">
+                    <input asp-for="Contacto" class="form-control" />
+                    <span asp-validation-for="Contacto" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="EmailContacto"></label>
+                </div>
+                <div class="col-8">
+                    <input asp-for="EmailContacto" class="form-control" />
+                    <span asp-validation-for="EmailContacto" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="Telefono"></label>
+                </div>
+                <div class="col-8">
+                    <input asp-for="Telefono" class="form-control" />
+                    <span asp-validation-for="Telefono" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="ContactoSoporte"></label>
+                </div>
+                <div class="col-8">
+                    <input asp-for="ContactoSoporte" class="form-control" />
+                    <span asp-validation-for="ContactoSoporte" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="EmailSoporte"></label>
+                </div>
+                <div class="col-8">
+                    <input asp-for="EmailSoporte" class="form-control" />
+                    <span asp-validation-for="EmailSoporte" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="TelefonoSoporte"></label>
+                </div>
+                <div class="col-8">
+                    <input asp-for="TelefonoSoporte" class="form-control" />
+                    <span asp-validation-for="TelefonoSoporte" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="Pagina"></label>
+                </div>
+                <div class="col-8">
+                    <input asp-for="Pagina" class="form-control" />
+                    <span asp-validation-for="Pagina" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-8 offset-4">
+                    <partial name="_VistaCrearVolver" />
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+
